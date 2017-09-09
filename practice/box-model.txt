@@ -1,0 +1,54 @@
+//// Question 1
+
+-- BLOCK: <blockquote>, <form>, <p>, <ul>
+
+-- INLINE: <a>, <em>, <span>, <img>
+
+-- INLINE-BLOCK:
+
+-- INDETERMINATE: <input>, <textarea>
+* depends on the browser 
+
+
+
+
+//// Question 2
+
+B, C, F  
+Two block elements with a width of 350px will display side by side in a 720px wide viewport if the elements are either both inline, both are inline-block, or one is inline and the other is inline-block.
+
+
+
+
+//// Question 3
+
+The textarea will require 578px of horizontal space and 358px of vertical space.
+
+
+
+
+//// Question 4
+
+A section is a block element and therefore will take up all horizontal space. Its actual width will be 578px and it will take up 358px in vertical height.
+
+
+
+
+//// Question 5
+
+An em will take up as much width and height as its content plus 44px on the right, 34px on the left, 14px on the top and bottom. Top and bottom margins are ignored so elements may appear overlapped.
+
+
+
+
+//// Question 6
+
+The textarea's box-sizing property is border-box so its width and height include the padding and border. Therefore, this element will take up 530px horizontally and 330px vertically.
+
+
+
+
+
+//// Question 7
+
+The two article boxes will not be displayed side by side in this example articles are block elements that take up all horizontal space available. To fix this, I would set display property of the article to inline-block and the box-sizing property of the article to border-box, which ensures that the article's 50% width includes the specified padding and borders.
