@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Positioning</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		div,
+		section {
+			height: 100px;
+			margin: 0 auto;
+			width: 100px;
+		}
+		section {
+			border: 3px solid red;
+		}
+		div {
+			border: 1px solid black;
+		}
+		.offset-relative {
+			left: 20px;
+			position: relative;
+			top: 20px;
+		}
+		section {
+			position: relative
+		}
+		.offset-absolute {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Relative Positioning Example</h1>
+	<div></div>
+	<div class="offset-relative"></div>
+	<div></div>
+
+	<h1>Absolute Positioning Example</h1>
+	<section>
+		<div class="offset-absolute"></div>
+		<div></div>
+	</section>
+
+</body>
+</html>

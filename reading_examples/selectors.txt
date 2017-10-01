@@ -1,0 +1,445 @@
+//// Example 1 
+
+h1 {}
+.tagline {}
+#intro {}
+
+
+<section id="intro">
+	<h1></h1>
+	<h2 class="tagline"></h2>
+</section
+
+
+
+
+//// Example 2
+
+article h2 {}
+
+
+<h2></h2>
+<article>
+	<h2>This heading will be selected</h2>
+	<div>
+		<h2>This heading will be selected<h2>
+	</div>
+</article>
+
+
+
+
+
+//// Example 4
+
+article > p {}
+
+
+<p></p>
+<article>
+	<p> This paragraph will be selected.</p>
+	<div>
+		<p></p>
+	</div>
+</article>
+
+
+
+
+
+//// Example 5
+
+h2 ~ p {}
+
+
+<p></p>
+<section>
+	<p></p>
+	<h2></h2>
+	<p>This paragraph will be selected</p>
+	<div>
+		<p></p>
+	</div>
+	<p>This paragraph will be selected</p>
+</section>
+
+
+
+
+//// Example 6 
+
+h2 + p
+
+
+<p></p>
+<section>
+	<p></p>
+	<h2></h2>
+	<p>This paragraph will be selected</p>
+	<div>
+		<p></p>
+	</div>
+	<p></p>
+</section>
+
+
+
+
+//// Example 7 
+
+a[target] {}
+
+
+<a href="#" target="_blank">...</a>
+
+
+
+
+
+
+//// Example 8 
+
+a[href="http://www.google.com"] {}
+
+
+<a href="http://www.google.com">...</a>
+
+
+
+
+
+
+//// Example 9 
+
+a[href*="login"] {}
+
+<a href="/login.php">...</a>
+
+
+
+
+
+
+//// Example 10
+
+a[href^="https://"] {}
+
+<a href="https://chase.com">...</a>
+
+
+
+
+
+
+//// Example 11
+
+a[href$=".pdf"] {}
+
+<a href="/docs/menu.pdf">...</a>
+
+
+
+
+
+//// Example 12
+
+a[rel~="tag"] {}
+
+<a href="#" rel="tag nofollow">...</a>
+
+
+
+
+
+
+//// Example 13
+
+a[lang|="en"] {}
+
+<a href="#" lang="en-US">...</a>
+
+
+
+
+
+
+
+
+//// Example 14
+
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+a:focus {}
+input:enabled {}
+input:disabled {}
+input:checked {}
+input:indeterminate {}
+
+
+
+
+
+
+//// Example 15
+
+li:first-child {}
+li:last-child {}
+div:only-child {}
+
+
+<ul>
+	<li>This list item will be selected</li>
+	<li>
+		<div> This div will be selected </div>
+	</li>
+	<li>
+		<div>...</div>
+		<div>...</div>
+	</li>
+	<li>This list item will be selected</li>
+</ul>
+
+
+
+
+
+
+//// Example 16
+
+p:first-of-type {}
+p:last-of-type {}
+img:only-of-type {}
+
+<article>
+	<h1></h1>
+	<p>This paragraph will be selected</p>
+	<p></p>
+	<img src="#"> <!-- This image will be selected -->
+	<p>This paragraph will be selected</p>
+	<h6></h6>
+</article>
+
+
+
+
+
+//// Example 17
+
+li:nth-child(3n) {}
+
+
+<ul>
+	<li></li>
+	<li></li>
+	<li>This list item will be selected.</li>
+	<li></li>
+	<li></li>
+	<li>This list item will be selected.</li>
+</ul>
+
+
+
+
+
+//// Example 18 
+
+li:nth-child(2n+3) {}
+
+
+<ul>
+	<li></li>
+	<li></li>
+	<li>This item will be selected</li>
+	<li></li>
+	<li>This item will be selected</li>
+	<li></li>
+</ul>
+
+
+
+
+
+
+
+//// Example 19
+
+li:nth-child(-n+4) {}
+
+<ul>
+	<li>This item will be selected</li>
+	<li>This item will be selected</li>
+	<li>This item will be selected</li>
+	<li>This item will be selected</li>
+	<li></li>
+	<li></li>
+</ul>
+
+
+
+
+
+
+
+//// Example 20
+
+li:nth-child(-2n+5) {}
+
+<ul>
+	<li>This item will be selected</li>
+	<li></li>
+	<li>This item will be selected</li>
+	<li></li>
+	<li>This item will be selected</li>
+	<li></li>
+</ul>
+
+
+
+
+
+
+//// Example 21
+
+li:nth-last-child(3n+2) {}
+
+<ul>
+	<li></li>
+	<li>This item will be selected</li>
+	<li></li>
+	<li></li>
+	<li>This item will be seleceted</li>
+	<li></li>
+</ul>
+
+
+
+
+
+
+//// Example 22
+
+li:nth-of-type(3n) {}
+
+
+<ul>
+	<h1></h1>
+	<p></p>
+	<p></p>
+	<p>This item is selected </p>
+	<h2></h2>
+	<p></p>
+	<p></p>
+	<p>This item is selected</p>
+</ul>
+
+
+
+
+
+
+//// Example 23
+
+li:nth-last-of-type(2n+1) {}
+
+<ul>
+	<h1></h1>
+	<p></p>
+	<p>This item is selected</p>
+	<p></p>
+	<h2></h2>
+	<p>This item is selected</p>
+	<p></p>
+	<p>This item is selected</p>
+</ul>
+
+
+
+
+
+
+//// Example 24
+
+section:target {}
+
+<section id="hello"></section>
+
+
+
+
+
+
+//// Example 25
+
+div:empty {}
+
+<div>Hello</div>
+<div><!--Coming soon!--></div> <!-- This item is selected -->
+<div></div> <!-- This item is selected -->
+<div> </div>
+<div<strong</strong></div>
+
+
+
+
+
+
+//// Example 26
+
+div:not(.awesome) {}
+:not(div) {}
+
+
+<div>This item is selected</div>
+<div class="awesome"></div>
+<section>This item is selected<div>
+<section class="awesome">This item will be selected</section>
+
+
+
+
+
+
+
+//// Example 27
+
+.alpha:first-letter,
+.bravo:first-line {
+	color: #ff7b29;
+	font-size: 18px;
+}
+
+
+<p class="alpha"> Lorem ipsum...</p>
+<p class="bravo"> Integer eget enim...</p>
+
+
+
+
+
+
+
+//// Example 28
+
+a:after {
+	color: #9799a7;
+	content: " (" attr(href) ")";
+	font-size: 11px;
+}
+
+
+<a href="http://google.com/">Search the web</a>
+<a href="http://learn.shayhowe.com/">Learn how to build websites</a>
+
+
+
+
+
+
+//// Example 29
+
+::moz-selection,
+::selection {
+	background: #ff7b29;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Gradient Backgrounds</title>
+	<style>
+		div {
+			margin: 20px 0;
+		}
+		div:first-child {
+			background: #466368;
+			background: -webkit-linear-gradient(#648880, #293f50);
+			background: -o-linear-gradient(#648880, #293f50);
+			background: linear-gradient(#648880, #293f50);
+			border-radius: 6px;
+			height: 120px;
+		}
+		div:nth-child(2) {
+			background: #466368;	
+			background: linear-gradient(to right bottom, #648880, #293f50);
+			border-radius: 6px;
+			height: 120px;
+		}
+		div:nth-child(3) {
+			background: #466368;
+			background: radial-gradient(#648880, #293f50);
+			border-radius: 6px;
+			height: 120px;
+		}
+		div:nth-child(4) {
+			background: #648880;
+			background: linear-gradient(to right, #f6f1d3, #648880, #292f50);
+			border-radius: 6px;
+			height: 120px;
+		}
+		div:nth-child(5) {
+			background: #648880;
+			background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+			border-radius: 6px;
+			height: 120px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
