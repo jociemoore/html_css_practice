@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Blog</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html">Blog Title</a>
+		</h1>
+		<img src="images/logo.png" alt="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="#">HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="post">
+		<section>
+			<article>
+				<h2>
+					<a href="post.html">Post Headline</a>
+				</h2>
+
+				<p>Written by <a href="#">Shane Riley </a>on Feb. 15, 2014</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
+			</article>
+			<section>
+				<h2>Comments</h2>
+				<article>
+					<figure>
+						<img src="images/kevin.png" alt="Kevin">
+						<figcaption>
+							<a href="#">Kevin</a> on <time datetime="2014-02-15">Feb. 15, 2014</time>
+						</figcaption>
+					</figure>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</article>
+				<article>
+					<figure>
+						<img src="images/chris.png" alt="Chris">
+						<figcaption>
+							<a href="#">Chris</a> on <time datetime="2014-02-15">Feb. 15, 2014</time>
+						</figcaption>
+					</figure>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</article>
+			</section>
+			<section>
+				<h2>Post Comment</h2>
+				<form action="#" method="post">
+					<dl>
+						<dt>
+							<label for="fullname">Your Name</label>
+						</dt>
+						<dd>
+							<input type="text" name="fullname" id="fullname" /> 
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<label for="email">
+								Email Address
+							</label>
+						</dt>
+						<dd>
+							<input type="email" name="email" id="email" placeholder="name@website.com" />
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<label for="comment">Comment</label>
+						</dt>
+						<dd>
+							<textarea name="comment" id="comment"></textarea>
+						</dd>
+					</dl>
+					<input type="submit" value="Submit" />
+				</form>
+			</section>
+		</section>
+		<aside>
+			<div>
+				<h3>Categories</h3>
+				<ul>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">Other</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>About</h3>
+				<p>Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisq.</p>
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<p><small>&copy; 2014 Blog Title</small></p>
+	</footer>
+</body>
+</html>
