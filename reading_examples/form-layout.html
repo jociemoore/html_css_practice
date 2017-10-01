@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Form Layouts</title>
+	<style>
+		.styled_form {
+			background: #ececec;
+			border: 2px solid #999;
+			padding: 25px;
+		}
+		.styled_form label {
+			display: block;
+			margin: 0;
+			padding-bottom: 10px;
+		}
+		.styled_form input[type="text"] {
+			border: 1px solid #0066cc;
+			box-sizing: border-box;
+			font: normal 14px Helvetica, Arial, sans-serif;
+			height: 40px;
+			padding: 5px 8px;
+			width: 100%;
+		}
+		.styled_form dd {
+			margin-left: 0;
+		}
+		.styled_form.horizontal label {
+			display: inline-block;
+			padding: 0 20px 0 0;
+			vertical-align: middle;
+		}
+		.styled_form.horizontal input[type="text"] {
+			display: inline-block;
+			margin-bottom: 0;
+			vertical-align: middle;
+			width: 50%;
+		}
+		.styled_form.horizontal dl {
+			margin-bottom: 20px;
+		}
+		.styled_form.horizontal dt,
+		.styled_form.horizontal dd {
+			box-sizing: border-box;
+			display: inline-block;
+			margin: 0;
+			vertical-align: middle;
+		}
+		.styled_form.horizontal dt {
+			padding-right: 20px;
+			width: 25%;
+		}
+		.styled_form.horizontal dd {
+			width: 75%;
+		}
+		.styled_form.horizontal input[type="text"] {
+			width: 100%;
+		}
+		input[type="text"] + input[type="text"] {
+			margin-top: 10px;
+		}
+		.partial {
+			box-sizing: border-box;
+			display: inline-block;
+			padding-right: 20px;
+			vertical-align: middle;
+		}
+		.city {
+			width: 50%;
+		}
+		.state {
+			width: 25%;
+		}
+		.zipcode {
+			padding-right: 0;
+			width: 25%;
+		}
+	</style>
+</head>
+<body>
+	<div class="styled_form">
+		<label for="example_1">Example top to bottom layout</label>
+		<input type="text" id="example_1">
+	</div>
+	<div class="styled_form">
+		<dl>
+			<dt>
+				<label for="example_2">Name</label>
+			</dt>
+			<dd>
+				<input type="text" id="example_2">
+			</dd>
+			<dt>	
+				<label for="example_3">Title</label>
+			</dt>
+			<dd>
+				<input type="text" id="example_3">
+			</dd>
+		</dl>
+	</div>
+	<div class="styled_form horizontal">
+		<dl>
+			<dt>
+				<label for="example_4">Name</label>
+			</dt><!--
+			--><dd>
+				<input type="text" id="example_4">
+			</dd>
+		</dl>
+		<dl>
+			<dt>	
+				<label for="example_5">Title</label>
+			</dt><!--
+			--><dd>
+				<input type="text" id="example_5">
+			</dd>
+		</dl>
+	</div>
+	<div class="styled_form">
+		<dl>
+			<dt>
+				<label for="name">Name</label>
+			</dt>
+			<dd>
+				<input type="text" id="name">
+			</dd>
+		</dl>
+		<dl>
+			<dt>	
+				<label for="address1">Address</label>
+			</dt>
+			<dd>
+				<input type="text" id="address1">
+				<input type="text" name="address2">
+			</dd>
+		</dl>
+		<dl class="city partial">
+			<dt>
+				<label for="city">City</label>
+			</dt>
+			<dd>
+				<input type="text" name="city">
+			</dd>
+		</dl><!--
+		--><dl class="state partial">
+			<dt>
+				<label for="state">State</label>
+			</dt>
+			<dd>
+				<select name="state" id="state">
+					<option>AK</option>
+					<option>AL</option>
+				</select>
+			</dd>
+		</dl><!--
+		--><dl class="zipcode partial">
+			<dt>
+				<label for="zipcode">Zipcode</label>
+			</dt>
+			<dd>
+				<input type="text" name="zipcode">
+			</dd>
+		</dl>
+	</div>
+</body>
+</html>
