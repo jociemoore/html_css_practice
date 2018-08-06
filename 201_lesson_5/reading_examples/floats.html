@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Floats</title>
+	<style>
+		body {
+			color:#fff;
+			font: 600 14px/ 24px Helvetica, Arial, sans-serif;
+		}
+		.box,
+		.box-set {
+			border-radius: 6px;
+		}
+		.box-set {
+			background: #eaeaed;
+			margin:20px;
+			overflow: auto;
+		}
+		.box {
+			background: #2db34a;
+			float: left;
+			margin: 1.858736059%;
+			padding: 20px 0;
+			text-align: center;
+			width: 29.615861214%;
+		}
+		.overflow-cons {
+			box-shadow: 0 15px 20px #ff7b29;
+		}
+		.overflow-cons:nth-child(2) {
+			position: relative;
+			top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box-set">
+		<figure class="box">Box 1</figure>
+		<figure class="box">Box 2</figure>
+		<figure class="box">Box 3</figure>
+	</div>
+	<div class="box-set">
+		<figure class="box overflow-cons">Box 1</figure>
+		<figure class="box overflow-cons">Box 2</figure>
+		<figure class="box overflow-cons">Box 3</figure>
+	</div>
+</body>
+</html>

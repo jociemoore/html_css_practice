@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Position Property</title>
+	<style>
+		body {
+			color: #fff;
+			font: 600 14px/24px Helvetica, Arial, sans-serif;
+		}
+		figure {
+			margin: 0;
+		}
+		section {
+			margin: 20px;
+		}
+		.box-set,
+		.box {
+			border-radius: 6px;
+		}
+		.box-set {
+			background: #eaeaed;
+		}
+		.box {
+			background: #2cb34a;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			width: 80px;
+		}
+		.relative .box {
+			position: relative;
+		}	
+		.relative .box-1 {
+			top: 20px;
+		}
+		.relative .box-2 {
+			left: 40px;
+		}
+		.relative .box-3 {
+			bottom: -10px;
+			right: 20px;
+		}
+		.absolute .box-set {
+			height: 200px;
+			position: relative;
+		}
+		.absolute .box {
+			position: absolute;
+		}
+		.absolute .box-1,
+		.fixed .box-1 {
+			left: 2%;
+			top: 6%;
+		}
+		.absolute .box-2,
+		.fixed .box-2  {
+			right: -40px;
+			top: 0;
+		}
+		.absolute .box-3,
+		.fixed .box-3 {
+			bottom: -10px;
+			right: 20px;
+		}
+		.absolute .box-4,
+		.fixed .box-4 {
+			bottom: 0;
+		}
+		.fixed .box {
+			opacity: .5;
+			position: fixed;
+		}
+		.fixed .box-set {
+			position: static;
+		}
+	</style>
+</head>
+<body>
+
+	<section>
+		<div class="box-set">
+			<figure class="box box-1">Box 1</figure>
+			<figure class="box box-2">Box 2</figure>
+			<figure class="box box-3">Box 3</figure>
+			<figure class="box box-4">Box 4</figure>
+		</div>		
+	</section>
+
+	<section class="relative">
+		<div class="box-set">
+			<figure class="box box-1">Box 1</figure>
+			<figure class="box box-2">Box 2</figure>
+			<figure class="box box-3">Box 3</figure>
+			<figure class="box box-4">Box 4</figure>
+		</div>
+	</section>
+
+	<section class="absolute">
+		<div class="box-set">
+			<figure class="box box-1">Box 1</figure>
+			<figure class="box box-2">Box 2</figure>
+			<figure class="box box-3">Box 3</figure>
+			<figure class="box box-4">Box 4</figure>
+		</div>
+	</section>
+
+	<section class="fixed">
+		<div class="box-set">
+			<figure class="box box-1">Box 1</figure>
+			<figure class="box box-2">Box 2</figure>
+			<figure class="box box-3">Box 3</figure>
+			<figure class="box box-4">Box 4</figure>
+		</div>
+	</section>
+
+</body>
+</html>

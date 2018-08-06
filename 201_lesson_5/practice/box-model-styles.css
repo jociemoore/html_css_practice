@@ -1,0 +1,218 @@
+* {
+	box-sizing: border-box;
+}
+main {
+	border: 2px solid #999999;
+	color: #545459;
+	font: 16px/24px Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	padding: 10px 20px;
+	width: 1044px;
+}
+h1 {
+	font-size: 1.5rem;
+	color: #ce4a4a;
+}
+main + h1,
+.floating h1:first-child {
+	border-top: 2px dashed #545459;
+	padding-top: 32px;
+	text-align: center;
+}
+p {
+	line-height: 36px;
+	margin: 24px 0;
+}
+a {
+	color: #545459;
+	text-decoration: none;
+}
+.positioning ul {
+	padding-left: 80;
+}
+.example {
+	line-height: 18px;
+	margin: 40px 0;
+}
+.inline,
+.inline-margins,
+.inline-padding,
+.inline-float {
+	border: 2px dashed #545459;
+	margin-left: 45px;
+	width: 650px;
+}
+.inline {
+	padding: 30px;
+}
+.inline-margins {
+	padding: 30px;
+}
+.inline-margins a {
+	margin: 30px;
+}
+.inline-padding {
+	padding: 30px;
+}
+.inline-padding a {
+	background: #008000;
+	color: #fff;
+	padding: 30px;
+}
+.inline-float {
+	padding: 30px;
+}
+.inline-float:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.inline-float a {
+	background: #008000;
+	color: #fff;
+	float: left;
+	margin: 15px;
+	padding: 30px 35px;
+}
+.block {
+	color: #fff;
+}
+.block div:first-child {
+	background: #1e90ff;
+}
+.block div:nth-child(2) {
+	background: #008000;
+	height: 60px;
+	margin: 20px;
+	padding: 20px;
+}
+.block div:nth-child(3) {
+	background: #ff6347;
+	width: 90px;
+}
+.float-block {
+	color:#fff;
+}
+.float-block div:first-child {
+	background: #1e90ff;
+	float: left;
+}
+.float-block div:nth-child(2) {
+	background: #ff6347;
+	float: right;
+}
+.float-block:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.float-block2 {
+	color:#fff;
+	text-align: center;
+}
+.float-block2 div {
+	padding: 30px 0 ;
+}
+.float-block2 div:first-child {
+	background: #ff6347;
+	float: left;
+	width: 40%;
+}
+.float-block2 div:nth-child(2) {
+	background: #1e90ff;
+	float: right;
+	width: 50%;
+}
+.float-block2:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.inline-2-block {
+	margin: 0 auto;
+	width: 98%;
+}
+.inline-2-block a {
+	background: #1e90ff;
+	color: #fff;
+	display: block;
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+.inline-block ul {
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+}
+.inline-block li {
+	background: #1e90ff;
+	color: #fff;
+	display: inline-block;
+	margin: 10px;
+	padding: 20px 0;
+	text-align: center;
+	width: 175px;
+}
+.floats {
+	width: 95%;
+}
+.floats div {
+	color: #fff;
+	text-align: center;
+	width:100%;
+}
+.floats div:first-child {
+	background: #ff6347;
+	float: left;
+	padding: 50px;
+	width: 50%;
+}
+.floats div:nth-child(2) {
+	background: #1e90ff;
+	float: right;
+	padding: 50px;
+	width: 50%;
+}
+.floats div:nth-child(3) {
+	background: #008000;
+	clear: both;
+	padding: 20px 0;
+}
+.fixed-pos div {
+	background: #1e90ff;
+	border-radius: 10px;
+	bottom: 50px;
+	color: #fff;
+	left: 35px;
+	padding: 25px 45px;
+	position: fixed;
+	text-align: center;
+}
+.relative-pos div {
+	background: #ff6347;
+	border-radius: 10px;
+	color: #fff;
+	left: -100px;
+	padding: 25px 45px;
+	position: relative;
+	text-align: center;
+	top: 55px;
+	width: 350px;
+	
+}
+.absolute-pos {
+	position: relative;
+}
+.absolute-pos div {
+	background: #008000;
+	border-radius: 10px;
+	color: #fff;
+	left: 225px;
+	padding: 25px;
+	position: absolute;
+	text-align: center;
+	top: -35px;
+	width: 200px;
+}
+

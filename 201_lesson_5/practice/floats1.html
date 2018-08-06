@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Floats</title>
+	<style>
+		body {
+			background: #cdcdcd;
+		}
+		section {
+			background: #fff;
+			margin: 0 auto;
+			max-width: 1200px;
+		}
+		article {
+			background: #ffffc7;
+			box-sizing: border-box;
+			float: left;
+			padding-right: 30px;
+			width: 70%;
+		}
+		section > aside {	
+			float: left;
+			width: 15%;
+		}
+		aside:nth-of-type(2) {
+			background: #ccffcd;
+			overflow: hidden;
+			/*margin-left: 500px;*/
+		}
+		footer {
+			background: #eee;
+			clear: both
+		}
+		.group:after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<section class="group">
+		<aside>
+			<p>Mauris lacinia laoreet mauris. Nulla tellus turpis, tempus at ante ac, lacinia posuere nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dui ipsum, pharetra nec eros mattis, lacinia pharetra leo. Sed libero ligula, scelerisque et lobortis ac, volutpat eu quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus suscipit laoreet mi eget faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in aliquam justo, vel porttitor neque. Vivamus rhoncus velit a nunc laoreet, quis placerat erat fermentum. Sed dapibus semper enim in sodales. Phasellus faucibus ornare faucibus. Nunc at pretium ipsum. Sed bibendum, nisl in finibus euismod, justo odio imperdiet est, ac vulputate ligula neque sed lacus. Donec placerat tellus eu rhoncus imperdiet. </p>
+		</aside>	
+
+		<article>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et metus est. Sed ullamcorper ex feugiat nulla aliquam venenatis. Donec finibus mauris ut mattis sagittis. Cras placerat tempus purus, vel laoreet risus ornare eget. Praesent hendrerit ut massa in auctor. Nam eu bibendum velit. Etiam elit nulla, malesuada accumsan orci vitae, laoreet lobortis dolor. Duis non urna eu felis tempor sollicitudin id eget mi. Praesent a dolor ut libero vulputate euismod. Ut vitae enim at est accumsan tempus. Aliquam eros augue, vestibulum id fringilla vitae, cursus quis tortor. Curabitur eget ex eget nisi accumsan dictum et sit amet diam. Maecenas cursus sodales pulvinar. Mauris purus risus, varius a turpis in, imperdiet tincidunt augue. </p>
+
+			<p>Donec venenatis orci sed dolor malesuada ultricies. Donec malesuada convallis finibus. Nam ornare mauris massa, ut dapibus ante pretium faucibus. Nunc mattis metus quis venenatis luctus. Curabitur odio quam, consectetur eget rhoncus nec, gravida eu ipsum. Pellentesque porta est ac ipsum mattis, eu euismod nulla dictum. Praesent imperdiet ultrices odio vitae semper. Curabitur eleifend, augue sed scelerisque rutrum, orci nulla dapibus felis, eget sollicitudin leo mi eu lectus. </p>
+
+			<p>Etiam semper mi in imperdiet congue. Suspendisse ac leo eros. Fusce fringilla urna non purus fringilla mollis. Sed congue mollis massa ac congue. In viverra feugiat libero et sodales. Quisque nisl eros, placerat gravida tincidunt ac, cursus ac felis. Cras tincidunt vel massa vitae elementum. Ut massa eros, bibendum id mi a, accumsan viverra ex. Duis id rhoncus leo. Quisque rutrum leo non posuere sollicitudin. Vivamus sem tellus, gravida feugiat blandit eu, hendrerit congue nisl. Phasellus ultricies rhoncus lorem, eu aliquet turpis vehicula vel.</p>
+
+			<p>Mauris lacinia laoreet mauris. Nulla tellus turpis, tempus at ante ac, lacinia posuere nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dui ipsum, pharetra nec eros mattis, lacinia pharetra leo. Sed libero ligula, scelerisque et lobortis ac, volutpat eu quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus suscipit laoreet mi eget faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in aliquam justo, vel porttitor neque. Vivamus rhoncus velit a nunc laoreet, quis placerat erat fermentum. Sed dapibus semper enim in sodales. Phasellus faucibus ornare faucibus. Nunc at pretium ipsum. Sed bibendum, nisl in finibus euismod, justo odio imperdiet est, ac vulputate ligula neque sed lacus. Donec placerat tellus eu rhoncus imperdiet. </p>
+		</article>
+
+		<aside>
+			<p>Mauris lacinia laoreet mauris. Nulla tellus turpis, tempus at ante ac, lacinia posuere nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dui ipsum, pharetra nec eros mattis, lacinia pharetra leo. Sed libero ligula, scelerisque et lobortis ac, volutpat eu quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus suscipit laoreet mi eget faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in aliquam justo, vel porttitor neque. Vivamus rhoncus velit a nunc laoreet, quis placerat erat fermentum. Sed dapibus semper enim in sodales. Phasellus faucibus ornare faucibus. Nunc at pretium ipsum. Sed bibendum, nisl in finibus euismod, justo odio imperdiet est, ac vulputate ligula neque sed lacus. Donec placerat tellus eu rhoncus imperdiet. </p>
+
+			<!-- <p> Maecenas sit amet dui cursus mi vehicula lobortis. Nam in libero ac quam euismod ultricies. Donec a massa fringilla, ornare dolor vitae, scelerisque nulla. Aliquam id diam ultrices, scelerisque tortor a, dictum libero. Vivamus cursus tristique volutpat. Vivamus ac facilisis elit, eget lobortis felis. Suspendisse sed risus imperdiet dui dignissim tincidunt. Sed ac mauris sit amet metus dignissim rhoncus ac nec risus. Duis non maximus dui, quis convallis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec maximus nunc non bibendum pellentesque. </p> -->
+		</aside>
+
+		<footer>Etiam semper mi in imperdiet congue. Suspendisse ac leo eros. Fusce fringilla urna non purus fringilla mollis. Sed congue mollis massa ac congue. In viverra feugiat libero et sodales. Quisque nisl eros, placerat gravida tincidunt ac, cursus ac felis. Cras tincidunt vel massa vitae elementum. Ut massa eros, bibendum id mi a, accumsan viverra ex. Duis id rhoncus leo. Quisque rutrum leo non posuere sollicitudin. Vivamus sem tellus, gravida feugiat blandit eu, hendrerit congue nisl. Phasellus ultricies rhoncus lorem, eu aliquet turpis vehicula vel.</footer>
+	</section>
+
+	<!-- Question 2: You cannot see the white background of the section with both the article and the aside floated because the height of the section collapses because the floated elements are taken out of the flow of the page. -->
+
+</body>
+</html>
