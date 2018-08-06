@@ -1,0 +1,74 @@
+//// Example 1
+
+div {
+	background-color: #b2b2b2;
+}
+
+
+
+//// Example 2
+
+div {
+	background-color: #b2b2b2;
+	background-color: rgba(0, 0, 0, ,3);
+}
+
+
+
+
+//// Example 3 
+
+div {
+	background-image: url("alert.png");
+}
+
+
+
+//// Example 4
+
+div {
+	background-image: url("alert.png");
+	background-repeat: no-repeat;
+}
+
+
+
+
+//// Example 5 
+
+div {
+	background-image: url("alert.png");
+	background-position: 20px 10px;
+	background-repeat: no-repeat;
+}
+
+
+
+
+//// Example 6 
+
+div {
+	background: #b2b2b2 url("alert.png") 20px 10px no-repeat;
+}
+
+
+
+
+//// Example 7 
+
+div {
+	background: url("foreground.png") 0 0 no-repeat, 
+	url("middleground.png") 0 0 no-repeat,
+	url("background.png") 0 0 no-repeat;
+}
+
+
+
+
+//// Example 8 
+
+div {
+	background: url("shay.jpg") 0 0 no-repeat;
+	background-clip: padding-box;
+	background- origin: border-box;
+}

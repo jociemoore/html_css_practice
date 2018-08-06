@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" >
+	<title>Positioning</title>
+	<style>
+		#positioned {
+			background: #fff;
+			left: 50%;
+			margin-left: -200px;
+			padding: 40px 10px;
+			position: absolute;
+			right:0;
+			text-align: center;
+			top: 20px;
+			width: 400px;
+			z-index: 2;
+		}
+		div:nth-of-type(2) {
+			background: rgba(0, 0, 0, .6);
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
+		#positioned div {
+			background: #fcfc99;
+			height: 20px;
+			left: -10px;
+			position: absolute;
+			top: -10px;
+			width: 20px;
+		}
+	</style>
+</head>
+<body>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis accumsan commodo. Aliquam at malesuada sapien. Curabitur iaculis quis turpis eget tincidunt. Donec suscipit eu eros nec porta. Sed consectetur, libero non vestibulum vestibulum, sapien dui imperdiet neque, ac placerat nunc est non dui. Etiam justo lacus, semper et vulputate sed, porta ac tortor. Sed accumsan magna nibh, eu lobortis eros gravida ut. Donec feugiat feugiat est, non sodales sapien commodo ac. Nunc eu mollis diam, molestie semper lorem. </p>
+
+	<p>Morbi elit eros, mattis ut mollis vestibulum, rhoncus vel felis. Donec sem sapien, bibendum porta nisl ut, pretium pellentesque purus. Cras justo metus, euismod sit amet eleifend quis, imperdiet in lectus. Nullam at urna ut nisi placerat tempus. Nam velit nibh, congue in nunc rutrum, varius blandit diam. Suspendisse vel consequat mauris, et iaculis neque. Suspendisse potenti. Proin aliquam purus libero. Aliquam pretium magna non dolor vulputate interdum. Donec rhoncus efficitur facilisis.</p>	
+
+	<p>Ut dapibus hendrerit velit eu sodales. Maecenas commodo neque in nisi feugiat tincidunt. Nulla tempor nisl quis dolor ultrices aliquam. Aliquam fringilla elit ut pretium condimentum. Sed consectetur augue ut quam sodales, sit amet porttitor ante venenatis. Nunc pulvinar nulla lectus, non facilisis nunc luctus sed. Vivamus et lorem dignissim mauris fermentum bibendum. Duis auctor nibh nisl, blandit tempor purus fringilla at. Nullam tempor bibendum velit vel maximus.</p>
+
+	<p>Fusce id pharetra tellus. Phasellus sit amet tortor eget enim tempor placerat non ut metus. Phasellus maximus ac sapien vitae pellentesque. Quisque quis elit condimentum, vulputate lectus et, egestas leo. Integer semper ante a ante dictum condimentum. Sed fermentum justo nisi, ac luctus leo laoreet id. Duis efficitur at tellus et maximus. Maecenas nunc risus, mattis sed interdum ut, posuere eu libero. Phasellus eget leo in turpis fermentum accumsan. Suspendisse malesuada erat mauris, sed lacinia sem porttitor eu.</p>
+
+	<p>Vestibulum mattis facilisis lorem. Curabitur pulvinar libero non est tristique molestie id eget justo. Sed ornare gravida libero finibus pharetra. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum quis nulla in rhoncus. Duis scelerisque rutrum lectus at laoreet. Sed a nisl ex. Quisque blandit est id euismod pellentesque.</p>
+
+	<div id="positioned">
+		<p>I'm positioned!</p>
+		<div></div>
+	</div>
+	<div></div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Containing Floats</title>
+	<style>
+		section {
+			margin: 10px 0;
+		}
+		.columns {
+			background: #e0e0e0;
+			margin: 0 auto;
+			padding: 20px;
+			width: 840px;
+		}
+		.clearfix .columns:after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+		.primary, 
+		.secondary {
+			background: yellow;
+		}
+		.primary {
+			float: left;
+			width: 575px;
+		}
+		.secondary {
+			float: right;
+			width: 245px;
+		}
+		.overflow .columns {
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<section class="clearfix">
+		<div class="columns">
+			<div class="primary">
+				<h1>Main Content</h1>
+			</div>
+	
+			<div class="secondary">
+				<h3>Sidebar Content</h3>
+			</div>
+		</div>	
+	</section>
+	
+	<section class="overflow">
+		<div class="columns">
+			<div class="primary">
+				<h1>Main Content</h1>
+			</div>
+	
+			<div class="secondary">
+				<h3>Sidebar Content</h3>
+			</div>
+	</div>		
+	</section>
+
+</body>
+</html>

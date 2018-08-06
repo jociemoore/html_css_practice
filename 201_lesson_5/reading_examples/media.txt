@@ -1,0 +1,55 @@
+//// Example 1
+
+<img src="dog.jpg" alt="A black, brown, and white dog wearing a kerchief" />
+
+
+
+
+//// Example 2
+
+<audio src="jazz.ogg"></audio>
+
+
+
+
+//// Example 3
+
+<audio src="jazz.ogg" autoplay ></audio>
+
+
+
+
+
+//// Example 4
+
+<audio src="jazz.ogg" controls></audio>
+
+
+
+
+
+
+//// Example 5
+
+<audio controls>
+	<source src="jazz.ogg" type="audio/ogg">
+	<source src="jazz.mp3" type="audio/mp3">
+	<source src="jazz.wav" type="audio/wav">
+	Please <a href="jazz.mp3" download> download</a> the audio file.
+</audio>
+
+
+
+
+
+//// Example 6
+
+<video src="earth.ogv" controls poster="earth-video=screenshot.jpg"></video>
+
+
+
+
+
+//// Example 7 
+
+<iframe src="http://www.google.com/maps/embed?..."></iframe>
