@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Mobile First</title>
+	<style>
+		body {
+			color: #fff;
+			font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica-Neue", Helvetica, Arial, sans-serif;
+		}
+		.container {
+			background: #eaeaed;
+		}
+		.one-hundred {
+			width: 100%;
+		}
+		.seventy-five {
+			width: 75%;
+		}
+		.fifty {
+			width: 50%;
+		}
+		.container:after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+		section,
+		aside,
+		.container {
+			border-radius: 6px;
+		}
+		section,
+		aside {
+			background: #2db34a;
+			margin: 1.858736059%;
+			padding: 20px 0;
+			text-align: center;
+		}		
+		h1 {
+			color: #999;
+			font-size: 1rem;
+			margin-top: 25px;
+		}
+		@media all and (min-width: 420px) {
+			.container {
+				max-width: 538px;
+			}
+			section {
+				float: left;
+				width: 63.197026%;
+			}
+			aside {
+				float: right;
+				width: 29.3680297%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>100% Wide Container</h1>
+	<div class="container one-hundred">
+		<section>&lt;section&gt;</section>
+		<aside>&lt;aside&gt;</aside>
+	</div>
+	<h1>75% Wide Container</h1>
+	<div class="container seventy-five">
+		<section>&lt;section&gt;</section>
+		<aside>&lt;aside&gt;</aside>
+	</div>
+	<h1>50% Wide Container</h1>
+	<div class="container fifty">
+		<section>&lt;section&gt;</section>
+		<aside>&lt;aside&gt;</aside>
+	</div>
+</body>
+</html>
