@@ -1,0 +1,133 @@
+//// Example 1
+
+p {
+	background: orange;
+	font-size: 24px;
+}
+
+p {
+	background: green;
+}
+
+
+
+
+
+
+//// Example 2
+
+p {
+	background: orange;
+	background: green;
+}
+
+
+
+
+
+//// Example 3
+
+<p id="food"> Apple </p>
+
+#food {
+	background: green;
+}
+
+p {
+	background: orange;
+}
+
+
+
+
+
+
+//// Example 4
+
+<div class="hotdog">
+	<p></p>
+	<p></p>
+	<p class="mustard"></p>
+</div>
+
+
+
+.hotdog p {
+	background: brown;
+}
+
+.hotdog p.mustard {
+	background: yellow;
+}
+
+
+
+
+
+
+//// Example 5
+
+<a class="btn btn-danger">...</a>
+<a class="btn btn-success">...</a>
+
+
+.btn {
+	font-size: 16px;
+}
+
+.btn-danger {
+	background: red;
+}
+
+.btn-success {
+	background: green;
+}
+
+
+
+
+
+
+
+
+//// Example 6
+
+.task {
+	background: #800000;
+}
+
+.count {
+	background: #ff0;
+}
+
+
+
+
+
+
+//// Example 7
+
+.task {
+	background: rgb(128,0,0);
+}
+
+.count {
+	background: rgb(255,255,0);
+}
+
+
+
+
+
+
+
+//// Example 8
+
+.task {
+	background: rgba(128,0,0,0.25);
+}
+
+.count {
+	background: rgba(255,255,0,1);
+}
+
