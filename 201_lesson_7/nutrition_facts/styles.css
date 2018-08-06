@@ -1,0 +1,120 @@
+/*
+===================
+Overall Styles
+===================
+*/
+
+body {
+	font: 28px/30px Helvetica, Arial, sans-serif;
+	margin: 10px;
+	width: 675px;
+}
+main {
+	border: 2px solid #000;
+	padding: 10px 15px;
+
+}
+h1 {
+	font-size: 2em;
+	line-height: 1em;
+}
+header {
+	border-bottom: 30px solid #000;
+	padding-bottom: 5px;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.indented {
+	font-weight: normal;
+	text-indent: 33px;
+}
+
+
+/*
+===================
+Table #1 Styles
+===================
+*/
+
+
+table:first-of-type td,
+table:first-of-type th {
+	border-top: 1px solid #000;
+}
+table:first-of-type th {
+	font-weight: 700;
+	padding: 10px 0;
+}
+table:first-of-type td {
+	padding: 2px 0;
+}
+table:first-of-type td:nth-child(2) {
+	text-align: right;
+}
+table:first-of-type thead:nth-of-type(2) th {
+	padding-bottom: 1px;
+	text-align: right;
+}
+table:first-of-type tbody:first-of-type {
+	border-bottom: 15px solid #000;
+}
+table:first-of-type tbody:nth-of-type(2) {
+	border-bottom: 20px solid #000;
+}
+table:first-of-type tr:nth-of-type(15) td {
+	border-bottom: 1px solid #000;
+}
+dt,
+dd {
+	display: inline-block;
+	font-weight: normal;
+}
+table:first-of-type tbody:nth-of-type(2) td,
+dt {;
+	font-weight: 700;
+}
+table:first-of-type tbody:first-of-type td:last-of-type dt {
+	font-weight: 400;
+}
+table:first-of-type tfoot td {
+	font-size: .85em;
+	line-height: 1.1em;
+	padding: 15px;
+}
+table:first-of-type tfoot td:before {
+	content: "*";
+	left: 25px;
+	position: absolute;
+}
+
+
+
+
+
+/*
+===================
+Table #2 Styles
+===================
+*/
+
+
+table + table {
+	font-size: .80em;
+	line-height: 1em;
+}
+table + table th,
+table + table td {
+	padding: 3px 0;
+}
+table + table th {
+	width: 37%;
+}
+table + table thead td {
+	border-bottom: 1px solid #000;
+}
+table + table thead td:first-of-type {
+	padding-right: 55px;
+	text-align: right;
+}
