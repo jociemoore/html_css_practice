@@ -1,0 +1,10 @@
+1. Semantic tags --> <article>, <aside>, <footer>, <h3>, <header>, <section>, <b>, <strong>
+Non-semantic tags --> <div>, <span>
+
+2. <article> would be the best tag for "Lincoln's Gettysburg Address" because its self-contained.
+
+3. You could replace <article> with <blockquote>.
+
+4. <section> would be the most appropriate tag for the info on the text-align property.
+
+5. <aside> would be the most appropriate tag for the extra info about hexadecimals.

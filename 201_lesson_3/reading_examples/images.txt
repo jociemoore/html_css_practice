@@ -1,0 +1,26 @@
+//// Example 1
+
+<img src="masthead.jpg" alt="Sunset over the forest" />
+
+
+
+
+
+//// Example 2
+
+<figure>
+	<img src="masthead.jpg" alt="sunset over the forest" />
+	<figcaption>The sun sets over the dense forest.</figcaption>
+</figure>
+
+
+
+
+
+//// Example 3
+
+<figure>
+	<img src="dog.jpg" />
+	<figcaption>A black, brown, and white dog wearing a kerchief</figcaption>
+</figure>
+
