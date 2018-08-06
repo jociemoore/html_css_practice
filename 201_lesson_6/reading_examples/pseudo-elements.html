@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Pseudo Elements</title>
+	<style>
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
+		ul li:before,
+		ul li:after {
+			background: #0066cc;
+			border: 2px solid #333;
+			border-radius: 100%;
+			content: "";
+			display: inline-block;
+			height: 6px;
+			margin: 0 5px;
+			width: 6px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Groceries</h1>
+	<ul>
+		<li>Wheat Bread</li>
+		<li>eggs</li>
+		<li>milk</li>
+	</ul>
+</body>
+</html>

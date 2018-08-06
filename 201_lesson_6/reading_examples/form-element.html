@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>The Form Element</title>
+</head>
+<body>
+	<form action="/login" method="post">
+		<fieldset>
+			<h1>Log In</h1>
+			<label for="email">Email Address</label>
+			<input type="email" name="email" id="email">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+			<div class="actions">
+				<input type="submit" value="Login" />
+				<button type="submit" formaction="/account/delete">Delete Account</button>
+				<button type="submit" formaction="/account/password_reset">Reset Password</button>
+			</div>
+		</fieldset>
+	</form>
+	<form id="search" action="/search" method="get">
+		<fieldset>
+			<input type="search" name="query">
+		</fieldset>
+	</form>
+	<input type="submit" value="Search" form="search">
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>Advanced Form</title>
+	<link rel="stylesheet" href="form_styles.css" />
+</head>
+<body>
+	<form action="#" method="post">
+		<h1>Create Your Profile</h1>
+		<fieldset>
+			<h2>Personal Info</h2>
+			<dl>
+				<dt><label for="firstname">Your Name</label></dt>
+				<dd class="partial firstname"><input type="text" name="firstname" id="firstname" placeholder="First"></dd><!--
+				--><dd class="partial lastname"><input type="text" name="lastname" placeholder="Last"></dd>
+			</dl>
+			<dl>
+				<dt><label for="email">Email</label></dt>
+				<dd><input type="email" name="email" id="email"></dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<h2>Social Media Accounts</h2>
+			<dl class="partial facebook">
+				<dt><label for="facebook">Facebook</label></dt>
+				<dd><input type="text" name="facebook" id="facebook"></dd>
+			</dl><!--
+			--><dl class="partial twitter">
+				<dt><label for="twitter">Twitter</label></dt>
+				<dd><input type="text" name="twitter" id="twitter"></dd>
+			</dl><!--
+			--><dl class="partial linkedin">
+				<dt><label for="linkedin">Linkedin</label></dt>
+				<dd><input type="text" name="linkedin" id="linkedin"></dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<h2>Account Info</h2>
+			<dl>
+				<dt><label for="username">Profile Name</label></dt>
+				<dd><input type="text" name="username" id="username"></dd>
+			</dl>
+			<dl class="partial password">
+				<dt><label for="password">Password</label></dt>
+				<dd><input type="password" name="password" id="password"></dd>
+			</dl><!--
+			--><dl class="partial confirmation">
+				<dt><label for="confirmation">Confirm Password</label></dt>
+				<dd><input type="password" name="confirmation" id="confirmation"></dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<h2><label for="bio">Bio</label></h2>
+			<textarea rows="6" cols="60" name="bio" id="bio"></textarea>
+		</fieldset>
+		<fieldset>
+			<input type="checkbox" name="policy" id="policy">
+			<label for="policy" class="policy">
+				I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.
+			</label>
+			<input type="submit" value="Create Account">
+		</fieldset>
+	</form>
+</body>
+</html>
