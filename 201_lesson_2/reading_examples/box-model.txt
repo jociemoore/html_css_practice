@@ -1,0 +1,100 @@
+//// Example 1
+
+p {
+	display: inline;
+}
+
+h1 {
+	display: block;
+}
+
+h2 {
+	display: inline-block;
+}
+ h3 {
+ 	display: none;
+}
+
+
+
+
+
+//// Example 2
+
+div {
+	border: 6px solid #949599;
+	height: 100px;
+	margin: 20px;
+	padding: 20px;
+	width: 400px;
+}
+
+
+
+
+
+
+//// Example 3
+
+div {
+	margin: 10px 20px 15px 20px;
+}
+
+
+
+
+//// Example 4
+
+div {
+	margin-top: 20px;
+}
+
+
+
+
+
+//// Example 5
+
+div {
+	border: 6px solid #949599;
+}
+
+
+
+
+//// Example 6
+
+div {
+	border-bottom-width:12px;
+}
+
+
+
+
+
+//// Example 7
+
+div {
+	border-bottom-width: 12px;
+}
+
+
+
+
+//// Example 8
+
+div {
+	border-radius: 5px;
+}
+
+
+
+
+
+//// Example 9
+
+div {
+	border-top-right-radius: 5px;
+}
+
+

@@ -1,0 +1,37 @@
+//// Example 1
+
+<div class="social">
+	<p> I may be found on...</p>
+	<p>Additionally, I hava a profile on...</p>
+</div>	
+
+
+<p>Soon we'll be <span class="tooltip">writing HTML</span> with the best of them.</p>
+
+
+
+
+
+
+//// Example 3
+
+<p><strong>Caution:</strong> Falling rocks. </p>
+<p>This recipe calls for <b>bacon</b> and <b>baconnaise</b></p>
+
+<p>I <em>love</em> Chicago!</p>
+<p>the name <i>Shay</i> means a gift.</p>
+
+
+
+
+
+
+//// Example 3
+
+<a href="about.html">About</a>
+
+<a href="http://www.google.com">Google</a>
+
+<a href="mailto:hello@jociemoore.com">Email Me</a>
+
+
